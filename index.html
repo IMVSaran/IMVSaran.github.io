@@ -1,1 +1,686 @@
-Hello world
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Drona Capital</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="css/homepage-mixed.css" rel="stylesheet" type="text/css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+  <link rel="stylesheet" href="css/pe-icon-7-stroke.css"/>
+  <link rel="stylesheet" href="css/font-awesome.min.css"/>
+  <link rel="stylesheet" href="css/helper.css"/>
+  
+  <link rel="stylesheet" href="css/common.css"/>
+  <link href="css/list-page.css" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="css/style.css"/>
+  <link rel="stylesheet" href="css/custom.css"/>
+  <style type="text/css">  	
+		@font-face {
+		    font-family: 'AvenirNext';
+		    src: url('fonts/avenir/avenirnextltpro-regular-webfont.eot');
+		    src: url('fonts/avenir/avenirnextltpro-regular-webfont.eot?#iefix') format('embedded-opentype'),
+		         url('fonts/avenir/avenirnextltpro-regular-webfont.woff2') format('woff2'),
+		         url('fonts/avenir/avenirnextltpro-regular-webfont.woff') format('woff'),
+		         url('fonts/avenir/avenirnextltpro-regular-webfont.ttf') format('truetype'),
+		         url('fonts/avenir/avenirnextltpro-regular-webfont.svg#avenirnext') format('svg');
+		    font-weight: normal;
+		    font-style: normal;
+
+		}
+
+
+		
+  </style>
+</head>
+ <body>
+ <!-- NavBar -->
+<nav class="navbar navbar-default navbar-static-top">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+         <a class="navbar-brand" href="#"><img src="images/DronaLogo.png"></a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+      
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#hme" ><button class="btn btn-home">Home</button></a></li>
+        <li><a href="#here" onclick="toggle3Color()"> <button class="tab-1-at btn btn-investment-approach">Investment Approach</button></a></li>
+        <li><a href="#here" onclick="toggle4Color()"> <button class="tab-2-at btn btn-investment-thesis">Investment Thesis</button></a></li>
+        <li><a href="#excerp"><button class="btn btn-excerpts">Excerpts from Newsletter</button></a></li>
+        <li><a href="#abfund"><button class="btn btn-about-fund">About fund</button></a></li>
+        <li><a href="#roli"><button class="btn btn-director">Director</button></a></li>
+        <li><a href="#portfolio"><button class="btn btn-portfolio">Portfolio</button></a></li>
+        <li><a href="#contact"><button class="btn btn-contact">Contact</button></a></li>
+      </ul>
+        </div>
+      </div>
+    </nav>
+   <!-- NavBar -->
+	<!-- <section id="hme">
+    <section class="navbar-section">
+      <div class="navbar-wrapper">
+        <div class="container">
+          <div class="row" id="internal-scroll">
+            <div class="col-md-12">
+              <div class="logo-wrapper">
+                <img src="images/DronaLogo.png">
+              </div>
+              <div  class="navbar-tab">
+                <div class="navbar-tab-wrapper">
+                  <a href="#contact"><button class="btn btn-contact">Contact</button></a>
+                </div>
+                <div class="navbar-tab-wrapper">
+                  <a href="#portfolio"><button class="btn btn-portfolio">Portfolio</button></a>
+                </div>
+				 <div class="navbar-tab-wrapper">
+                  <a href="#roli"><button class="btn btn-director">Director</button></a>
+                </div>
+                <div class="navbar-tab-wrapper">
+                  <a href="#abfund"><button class="btn btn-about-fund">About fund</button><a>
+                </div>
+                <div class="navbar-tab-wrapper">
+				 <div class="navbar-tab-wrapper">
+                  <a href="#excerp"><button class="btn btn-excerpts">Excerpts from Newsletter</button></a>
+                </div>
+                  <a href="#here" onclick="toggle4Color()"> <button class="tab-2-at btn btn-investment-thesis">Investment Thesis</button></a>
+                </div>
+                <div class="navbar-tab-wrapper">
+                  <a href="#here" onclick="toggle3Color()"> <button class="tab-1-at btn btn-investment-approach">Investment Approach</button></a>
+                </div>
+                <div class="navbar-tab-wrapper">
+                  <a href="#hme" ><button class="btn btn-home">Home</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</section> -->
+    <section class="logo-banner-section">
+      <div class="container">
+        <div class="logo-banner-wrapper">
+          <div class="overlay-white"></div>
+          <div class="overlay-content">
+            <div class="logo-overlay">
+              <img src="images/dronalogo.png">
+            </div>
+            <div class="overlay-text">
+              <p> Drona Capital is a private fund focusing on 'long only' equity investing in publicly listed small /mid cap companies by following time tested value investing principles. The firm seeks to look for exceptional businesses that are undervalued and invest in them long-term.<br/><br/>
+			  
+
+We value our customers’ needs of wealth preservation and therefore our objective is to ‘provide sustainable and adequate return on investment at minimal risk’.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="here" class="main-content-section">
+      <div class="content-tabs">
+          <button id="btn1" class="buttonProps1 tab-1-a " onclick="toggle1Color()">Investment Approach</button>
+          
+          <button id="btn2" class="buttonProps2 tab-2-a " onclick="toggle2Color()">Investment Thesis </button>
+          
+      </div>
+      <div class="mcontent-section-wrapper">
+        <div class="container">
+          <div class="row">
+            <div class="mcdiv-1">
+              <div class="mcdiv-1-wrapper">
+                <div class="mcdiv-1-icon">
+                  
+                </div>
+                
+                <div class="mcdiv-1-content">
+                  <h2>Investment Approach </h2>
+                  <h4>Invest in Attractive Businesses:</h4>
+                  <p>We take a fundamental approach of qualifying exceptional business based on fundamental analysis. Thorough research is carried out using various sources like the company annual reports, 10-k, 10-Q filing, company presentations and industry research.
+                  </p>
+                  <div class="mcdiv-1-subcontent">
+                    <div class="row">
+                      <div class="Quantitative-analysis col-md-6">
+                        <p class="show-p"><button class="btn blue show-p-quant"> Quantitative Analysis</button> </p>
+                      </div>
+                      <div class="Qualitative-analysis col-md-6">
+                        <p class="show-p"><button class="btn show-p-quality">Qualitative Analysis</button> </p>
+                      </div>
+                    </div>
+                    <div class="quantitative-hidden">
+                      <p class="show-more-p">Look for companies which have had strong historical financial performance in key return and liquidity ratios like return on invested capital and free cash flow.</p>
+                      <div class="show-more-table"><img src="images/table1.JPG"></div>
+                    </div>
+                    <div class="qualitative-hidden">
+                      <p class="show-more-p">This involves detailed study of the industry, the company and its competition, employing the Porter 5-Forces Framework to assess the industry attractiveness.</p>
+                      <div class="mcdiv-1-subcontent"><img src="images/table2.JPG"></div>
+                    </div>  
+                  </div>
+                  <div class="mcdiv-1-subcontent">
+                 
+                  <h4>Buy at deep discounts</h4>
+                  <p>Invest only when the price of the stock is significantly lower than the intrinsic value of the business. If the business is attractive enough, we invest only if there is enough margin of safety or wait for the right moment to get a bargain price, when market inefficiency prices them below their real value.
+                  </p>
+                  </div>
+                  <div class="mcdiv-1-subcontent">
+                  <h4>Minimum Risk</h4>                  
+                  <p>Sustainable return is possible only if the risk is reduced. Thorough assessment is done of various risks-business risk (for example supplier or customer concentration), liquidity risk ( for example debt/equity ratio) and operational risk (for example inventory management ). Investment in a company is made only when these risk are significantly low.
+                  </p>
+                  </div>
+                  <div class="mcdiv-1-subcontent">
+                  <h4>Long term investments</h4>                 
+                  <p>Market price of a great business with consistent earning is likely to reflect the earning over long period. Therefore if we find a good business, we stay invested long term.Few companies in which we have long-term investments. Value is in years. </p>
+                  </div>
+                </div> 
+              </div>
+            </div>
+            <div class="mcdiv-2">
+              <div class="mcdiv-2-wrapper">
+                <div class="mcdiv-2-icon">
+                  
+                </div>
+                <div class="mcdiv-2-content">
+                   <h2>Investment Thesis </h2>
+                  <p class="main-head-2-1">Take advantage of market inefficiencies from time to time</p>
+                  <p class="subcontent-2-1">We have a ‘Contrarian’ approach and bad news might be good news for us. The market at times over reacts to a ‘bad news’.</p>
+                  <p class="subcontent-2-1">A company might have had a bad quarter or gone through restructuring or recently announced a spin-off and market might be too pessimistic about it. This might lead to a low valuation for an otherwise excellent business, and this would be the right time for us to invest in the business.</p>
+                  <p class="subcontent-2-1">During the financial meltdown, many exceptional businesses were available at a very cheap discount. Political changes or natural disasters have a similar effect, when markets could over react and great businesses available at a bargain. We are always looking for these opportunities.</p>
+                  
+
+                  <p class="main-head-2-2">Focus on small and mid-cap companies</p>
+                  <p class="subcontent-2-2">The companies with Market Cap of less that US $10 Billion have higher probability of being neglected or escaping the radar of big mutual funds. </p>
+                  <p class="subcontent-2-2">They are more likely to be unattractive or unexciting business for bigger funds and therefore more likely to be priced below their intrinsic value.</p>
+                  <p class="subcontent-2-2">The median of our portfolio based on market cap is $7Bn</p>
+                  
+
+                  <p class="main-head-2-3">Invest in US Listed Companies</p>
+                  <p class="subcontent-2-3">The economy of United States is the world’s largest and its GDP is also the largest, approximately a fifth of world. It is home to 29.6 million small businesses, 30% of the world's millionaires, 40% of the world's billionaires, as well as 139 of the world's 500 largest companies are in America.</p>
+                  <p class="subcontent-2-3">The market cap of US is about 15 trillion with over 5,000 companies to choose from. As an added advantage, the US market is very well regulated and accurate information on companies available quite easily. Reliable and timely availability of financial data is key to thorough analysis and therefore, a preferred market of investing for Drona.</p>
+                  <p class="subcontent-2-3">The median of our portfolio with respect to when the company got listed is 1996. Which shows stability. </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+		<section id="excerp">
+        <div class="excerpts-div">
+          <div class="excerpts-wrapper">
+            <div class="mcdiv-3">
+              <div class="mcdiv-3-wrapper">
+                <div class="mcdiv-3-icon">    
+                </div>
+                <div class="mcdiv-3-content">
+                  <h2> Excerpts from the recent Newsletter</h2>
+                  <p>When one hears the word innovation, generally a fast paced technology oriented company comes to mind, especially today as several new startups continue to emerge, launching a new mobile app, a new technology or a new way of doing business. Even the existing technology and internet companies are continuously innovating or acquiring companies which seem to have something new or different to offer to the customers. Innovation seems to be a mantra for success</p>
+                  <p>We, on the other hand, have invested in companies which have a history of decades, and some of over a century of existence, and which at the outset seem to be doing same things for decades. So how have they survived without innovation? However, on the contrary, the fact is that every successful company which has managed to remain profitable and a leader in its industry has done so with smart innovations over the years</p>
+                  
+                  <p class="mcdiv-3-hidden">I would like to split innovations into two- the first type involves the introduction of a completely new idea or product which displaces the previous product / service / way of living – for instance, the move from horse carts to cars. In our portfolio, a couple of firms have innovated entirely new products, such as Cummins and Mettler Toledo</p>
+                  <p class="mcdiv-3-hidden">The second type of innovation involves the ongoing improvement to an initial idea in order to keep relevant and ahead of the times. This form of more regular innovation is, I believe, vital for the long-term growth and survival rate of any company, including almost all those in our portfolio as well as global century old businesses and those in the S&P 500.</p>
+                </div>  
+              </div>
+            </div>
+          </div> 
+        </div>
+			</section>
+    </section>
+    <section class="read-more-section">
+      <div class="container">
+        <div class="section-wrapper">
+          <div class="row">
+            <div class="col-md-7 want-more">
+              <p>Want to read more ?</p>
+              <p>Send your email address to receive the full newsletter</p>
+            </div>
+            <div class="col-md-5 email-submit">
+              <input type="text" name="email" placeholder=" email address">
+              <button class="btn btn-contact-us">Contact Us</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	<section id="abfund">
+    <section class="about-fund">
+      <div class="container">
+        <div class="about-fund-wrapper">
+          <div class="about-fund-content">
+            <h3>About Fund</h3>
+            <p>Drona Capital is an investment advisory firm which seeks long-term capital growth for its clients by pursuing time tested value-investing strategy. The firm is focused on small/mid-cap stocks which are undervalued but fundamentally great businesses.</p>
+            <p>Drona strives to provide sustainable and adequate return on investment at minimal risk</p>
+            <p>We started our life as a Single Family Office, and now after having a successful track record and endorsement from our original investor, we are turning our attention to growing into a Multi Family Office (MFO).</p>
+            <p>Drona Capital is licensed as a Private Fund in the republic of Seychelles under the Mutual Fund and Hedge Fund Act, 2008. </p>
+            <p>We charge a management fee of 0.375% quarterly and a performance fee of 20% annually.</p>
+            <!-- <button class="btn btn-learn-more">Learn More</button> -->
+          </div> 
+        </div>
+      </div>
+    </section>
+	</section>
+    <section class="sector-distr">
+      <div class="sector-section-wrapper container">
+        <div class="row">
+          <div class="col-md-6">
+            <h2>Sector Distribution</h2>
+            <p class="It">IT Services - 9%</p>
+            <p class="Cd">Consumer Discretionary - 31%</p>
+            <p class="Ig">Industrial goods - 20%</p>
+            <p class="Is">Industrial services - 15%</p>
+			<p class="Fs">Financial services - 11%</p>
+			<p class="Hc">Healthcare - 7%</p>
+			<p class="Bm">Basic materials - 7%</p>
+			
+          </div>
+          <div class="col-md-6">
+            <div class="chart1-banner">
+              <img src="images/chart1.jpg">
+            </div>
+          </div>
+        </div>
+        <!-- <h2>Sector Distribution</h2>
+        <div class="chart1-banner">
+          <img src="images/chart2.jpg">
+        </div> -->
+      </div>
+    </section>
+	<section id="roli">
+    <section class="roli-saxena">
+      <div class="container">
+        <div class="roli-section-wrapper">
+          <div class="row">
+            <div class="col-md-4">
+              <div class="roli-image-wrapper">
+                <img src="">
+              </div>
+            </div>
+            <div class="col-md-8">
+              <div class="roli-content">
+                <h2>Roli Saxena, Director, Drona Capital</h2>
+                <p>Roli Saxena graduated from Punjab Engineering College with a First Class (Hon) degree in Engineering. She was awarded the Gold medal for being the top person in her year. Roli also holds the Investment Management Certificate from the CFA society as well as Corporate Finance accreditation from London Business School.</p>
+                
+                <p class="roli-more">Roli has over 15 years of business experience in senior management roles in various parts of the world across many industries.Her experience spans Oil and Gas, Technology, IT Outsourcing and BPO Operations, Executive search, Educational Institutions and Investment Management. Roli was the first and only woman to manage country operations in Bahrain for Compaq. This role saw Roli increase the channel distribution to the tune of USD 80M. Roli then went on to become Head of PC Business unit for Compaq in the Philippines. Roli was instrumental in increasing the business sales by USD 150M.</p>
+                <p class="roli-more">Roli has adopted the Value Approach Investing method which she has used to successfully advise a Single Family Office for the past 5 years. Roli has built a solid track record and has consistently outperformed the market for the last 2 years.</p>
+                <p class="roli-more">Roli lives in London with her 3 children and her husband, who is a Senior Banker.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</section>
+    <section class="roli-banner">
+      <div class="container">
+        <div class="roli-txt-wrapper">
+          <p class="roli-name">Roli Saxena</p>
+          <p class="roli-game">The Director</p>
+        </div>
+      </div>
+    </section>
+	<section id="portfolio">
+	<section class="portfolio-section">
+      <div class="container">
+        <div class="portfolio-wrapper">
+          <h2>Portfolio</h2>
+          <div class="row logos-div">
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <!--  --><img src="images/MC GRAW HILL.jpg"><!-- </a> -->
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/CHRobinson_Stacked_Blue.jpg">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/2000px-Deckers_Outdoor_Corporation_logo.svg.jpg">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-1">
+                <p>random1</p>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-2">
+                <p>random2</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-3">
+                <p>random3</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/117__pic1.jpg">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/aaaNewmarketLogo.jpg">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/ThorMotorCoachLogo10-18-2010.jpg">
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-4">
+                <p>random4</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-5">
+                <p>random5</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-6">
+                <p>random6</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/700px-Bedbath&beyond_svg.jpg">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/coach-logo.jpg">
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                  <img src="images/varian+logo.jpg">
+              </div>
+            </div>
+            <div class="content content-7">
+                <p>random7</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-8">
+                <p>random8</p>
+              </div>
+            </div>
+            <div class="col-md-12">
+              <div class="content content-9">
+                <p>random9</p>
+              </div>
+            </div>
+            <div class="col-md-4">
+              <div class="portfolio-logo-wrapper">
+                <img src="images/accenture.jpg">
+            </div>
+          </div>
+          <div class="col-md-12">
+              <div class="content content-10">
+                <p>random10</p>
+              </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</section>
+  <div class="center">
+  </div>
+	<section id="contact">
+    <section class="top-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <form>
+              <p>Your Name</p>
+              <input type="text" name="name">
+              <p>Your email address</p>
+              <input type="text" name="email">
+              <p>Your message</p>
+              <input class="message-box" type="text" name="message">
+              <button class="btn btn-send"> Send</button>
+            </form>
+          </div>
+
+          <div class="col-md-4">
+            <div class="contact-us-wrapper">
+              <h3>Contact</h3>
+              <h4>Drona Capital Limited</h4>
+              <p>Suite 3, Global Village</p>
+              <p>Jivan’s Complex, Mont Fleuri, Mahe,</p>
+              <p>Seychelles</p>
+              <a href="mailto:info@dronacapital.com"> info@dronacapital.com</a>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div class="map-wrapper">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3976.784296917391!2d55.45953021417909!3d-4.632534046634754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x22e029bb986fc587%3A0x59005e5e79dac6e9!2sJivan&#39;s+Complex%2C+Seychelles!5e0!3m2!1sen!2sin!4v1474712004275" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+	</section>
+    <section class="footer">
+      <div class="container">
+        <div class="footer-wrapper">
+          <div class="row">
+            <div class="col-md-9">
+              <div class="f-content-wrapper">
+                <p>Drona Capital Limited is licenced as a Private fund in the Republic of Seychelles under the Mutual Fund & Hedge fund Act, 2008. Licence # PFA004</p>
+                <p>Copyright Drona Capital Limited</p>
+                <p>Website powered by 23 Yards.</p>
+              </div>
+            </div>
+            <div class="col-md-3">
+              <div class="footer-logo-wrapper">
+                <img src="images/dronalogo.png">
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <script type="text/javascript">
+      function toggle1Color(){
+        document.getElementById("btn1").classList.toggle("customblue");
+        document.getElementById("btn2").classList.remove("customblue");
+        }
+
+    </script>
+    <script type="text/javascript">
+      function toggle2Color(){
+        document.getElementById("btn2").classList.toggle("customblue");
+        document.getElementById("btn1").classList.remove("customblue");
+        }
+    </script>
+    <script type="text/javascript">
+      function toggle3Color(){
+        document.getElementById("btn1").classList.add("customblue");
+        document.getElementById("btn2").classList.remove("customblue");
+        }
+    </script>
+    <script type="text/javascript">
+      function toggle4Color(){
+        document.getElementById("btn2").classList.add("customblue");
+        document.getElementById("btn1").classList.remove("customblue");
+        }
+    </script>
+    <script>
+    $(document).ready(function(){
+      $(".tab-1-a").click(function(){
+        $(".mcdiv-1").toggle();
+        $(".mcdiv-2").hide();
+        
+        
+      });
+      $(".tab-1-at").click(function(){
+        $(".mcdiv-1").show();
+        $(".mcdiv-2").hide();
+        
+        
+      });
+      
+      $(".tab-2-a").click(function(){
+        $(".mcdiv-2").toggle();
+        $(".mcdiv-1").hide();
+        
+      });
+      $(".tab-2-at").click(function(){
+        $(".mcdiv-2").show();
+        $(".mcdiv-1").hide();
+        
+      });
+      
+      $(".show-p-quant").click(function(){
+        $(".quantitative-hidden").toggle();
+        $(".qualitative-hidden").hide();
+      });
+      $(".show-p-quality").click(function(){
+        $(".qualitative-hidden").toggle();
+        $(".quantitative-hidden").hide();
+      });
+      $(".main-head-2-1-a").click(function(){
+        $(".subcontent-2-1").toggle();
+        $(".main-head-2-1-a").hide();
+        $(".subcontent-2-2").hide();
+        $(".subcontent-2-3").hide();
+        $(".main-head-2-2-a").show();
+        $(".main-head-2-3-a").show();
+      });
+      $(".main-head-2-2-a").click(function(){
+        $(".subcontent-2-2").toggle();
+        $(".main-head-2-2-a").hide();
+        $(".subcontent-2-1").hide();
+        $(".subcontent-2-3").hide();
+        $(".main-head-2-1-a").show();
+        $(".main-head-2-3-a").show();
+      });
+      $(".main-head-2-3-a").click(function(){
+        $(".subcontent-2-3").toggle();
+        $(".main-head-2-3-a").hide();
+        $(".subcontent-2-1").hide();
+        $(".subcontent-2-2").hide();
+        $(".main-head-2-1-a").show();
+        $(".main-head-2-2-a").show();
+      });
+      $(".show-p-mcdiv-3").click(function(){
+        $(".mcdiv-3-hidden").toggle();
+        $(".show-p-mcdiv-3").hide();
+
+      });
+      $(".btn-read-more").click(function(){
+        $(".roli-more").slideToggle();
+        $(".btn-read-more").hide();
+      });
+      $(".show-content-1").click(function(){
+        
+        $(".content").hide();
+        $(".content-1").toggle();
+        $(".show-content-1").parent().css("background-color","aliceblue");
+        
+      });
+      $(".show-content-2").click(function(){
+        
+        $(".content").hide();
+        $(".content-2").toggle();
+      });
+      $(".show-content-3").click(function(){
+        
+        $(".content").hide();
+        $(".content-3").toggle();
+      });
+      $(".show-content-4").click(function(){
+        
+        $(".content").hide();
+        $(".content-4").toggle();
+      });
+      $(".show-content-5").click(function(){
+        
+        $(".content").hide();
+        $(".content-5").toggle();
+      });
+      $(".show-content-6").click(function(){
+        
+        $(".content").hide();
+        $(".content-6").toggle();
+      });
+      $(".show-content-7").click(function(){
+        
+        $(".content").hide();
+        $(".content-7").toggle();
+      });
+      $(".show-content-8").click(function(){
+        
+        $(".content").hide();
+        $(".content-8").toggle();
+      });
+      $(".show-content-9").click(function(){
+        
+        $(".content").hide();
+        $(".content-9").toggle();
+      });
+      $(".show-content-10").click(function(){
+        
+        $(".content").hide();
+        $(".content-10").toggle();
+      });
+      
+      });
+	  $(".btn-home").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#hme").offset().top-80
+    }, 1000);
+});
+$(".btn-contact").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#contact").offset().top-80
+    }, 1000);
+});
+$(".btn-excerpts").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#excerp").offset().top-80
+    }, 1000);
+});
+$(".btn-director").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#roli").offset().top-80
+    }, 1000);
+});
+$(".btn-portfolio").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#portfolio").offset().top-80
+    }, 2000);
+});
+$(".btn-about-fund").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#abfund").offset().top-80
+    }, 1000);
+});
+$("#buttttton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 2000);
+});
+$("#buttttton").click(function() {
+    $('html, body').animate({
+        scrollTop: $("#myDiv").offset().top
+    }, 2000);
+});
+$('#internal-scroll').onePageNav({
+	currentClass: 'current',
+	changeHash: false,
+	scrollSpeed: 750,
+	scrollThreshold: 0.5,
+	filter: ':not(.external)'
+});
+    </script>
+ </body>
+ </html>
